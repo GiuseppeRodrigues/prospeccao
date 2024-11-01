@@ -89,10 +89,16 @@ p#retorno {
 }
 
 
+/* Estilo padrão para telas maiores */
+
+
 /* Media Queries para Responsividade */
+
+/* Telas médias (ex: tablets) */
 @media (max-width: 768px) {
     main {
-        padding: 5px; /* Reduzir o padding em telas menores */
+        max-width: 100%; /* Ocupar a largura total da tela */
+        padding: 5px; /* Reduzir o padding */
     }
 
     footer p {
@@ -100,24 +106,30 @@ p#retorno {
     }
 
     a.marca:hover {
-        font-size: 24pt; /* Reduzir o tamanho da fonte do link com a classe 'marca' */
+        font-size: 24pt; /* Ajustar tamanho da fonte do link com classe 'marca' */
     }
 
     a:hover {
-        font-size: 12pt; /* Reduzir o tamanho da fonte em links ao passar o mouse */
+        font-size: 12pt; /* Ajustar tamanho da fonte em links */
     }
 }
 
+/* Telas pequenas (ex: smartphones) */
 @media (max-width: 480px) {
+    main {
+        width: 100%; /* Ocupar toda a largura da tela */
+    }
+
     main h1 {
-        font-size: 24pt; /* Ajustar o tamanho da fonte do título em telas pequenas */
+        font-size: 24pt; /* Ajustar o tamanho da fonte do título */
     }
 
     main h2 {
-        font-size: 20pt; /* Ajustar o tamanho da fonte do subtítulo em telas pequenas */
+        font-size: 20pt; /* Ajustar o tamanho da fonte do subtítulo */
     }
 
     img {
-        width: 100%; /* As imagens ocuparão 100% do contêiner em telas pequenas */
+        width: 100%; /* As imagens ocuparão 100% do contêiner */
     }
 }
+
