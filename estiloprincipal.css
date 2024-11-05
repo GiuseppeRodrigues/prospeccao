@@ -21,6 +21,12 @@ main h1,h2{
 main p{
     text-align: justify;
 }
+a.novo{
+    color: red;
+}
+a#mapa{
+    color: red;
+}
 footer p{
     font-size: 10pt;
     background-color:black;
